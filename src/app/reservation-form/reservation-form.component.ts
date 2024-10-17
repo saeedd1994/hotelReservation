@@ -9,4 +9,7 @@ import {FormGroup} from "@angular/forms";
 export class ReservationFormComponent {
 
   reservationForm: FormGroup = new FormGroup({});
+  onSubmit() {
+
+  }
 }
