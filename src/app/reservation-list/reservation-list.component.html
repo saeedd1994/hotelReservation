@@ -1,5 +1,6 @@
 <div>
-  <ul>
+  <h2>Reservation List</h2>
+  <ul *ngIf="reservations.length; else noTemplate">
     <li *ngFor="let reservation of reservations">
       Check-In Date : {{ reservation.checkInDate }}
       Check-Out Date : {{ reservation.checkOutDate }}
@@ -8,4 +9,8 @@
       Room Number : {{ reservation.roomNumber }}
     </li>
   </ul>
+
+  <ng-template #noTemplate>
+    No reservation available!
+  </ng-template>
 </div>
