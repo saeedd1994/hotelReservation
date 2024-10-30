@@ -9,6 +9,7 @@
       Room Number : {{ reservation.roomNumber }}
 
       <button (click)="deleteReservationItem(reservation.id)">Delete</button>
+      <button [routerLink]="['/edit',reservation.id]">Edit</button>
     </li>
 
   </ul>
